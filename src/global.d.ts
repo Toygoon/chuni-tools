@@ -4,6 +4,8 @@ declare let __APP_VERSION__: string
 declare let __INTL_VERSION__: string
 declare let __JP_VERSION__: string
 
+declare let __HOSTNAME__: string
+
 type CrossPageRequestMessagePayload = {
     target?: string,
     error?: Error,

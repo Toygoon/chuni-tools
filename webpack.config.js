@@ -92,7 +92,8 @@ module.exports = /** @type { import('webpack').Configuration } */ ({
         new DefinePlugin({
             "__APP_VERSION__": `"${process.env.npm_package_version}"`,
             "__INTL_VERSION__": `"sunplus"`,
-            "__JP_VERSION__": `"sunplus"`
+            "__JP_VERSION__": `"sunplus"`,
+            "__HOSTNAME__": `"http://127.0.0.1:5500/build"`,
         })
     ],
     devServer: { hot: true }

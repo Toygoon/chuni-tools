@@ -54,9 +54,18 @@ import { chuniNet } from "@/common/const"
                     "color: white")
                 res = fetchBestRecord(payload.data.difficulty)
                 break
-            case "playHistory": res = fetchPlayHistory(); break
-            case "recentRecord": res = fetchRecentRecord(); break
-            case "playerStats": res = fetchPlayerStats(); break
+            case "playHistory":
+                console.log("playHistory", payload.target);
+                res = fetchPlayHistory();
+                break
+            case "recentRecord":
+                console.log("recentRecord", payload.target);
+                res = fetchRecentRecord();
+                break
+            case "playerStats":
+                console.log("playerStats", payload.target);
+                res = fetchPlayerStats();
+                break
             case "songPlayCount":
                 console.log(
                     "%c    Target song id: %c" + payload.data.idx,
